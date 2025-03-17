@@ -1,0 +1,17 @@
+substitutions:
+  name: home-assistant-voice-094f40
+  friendly_name: Voicer
+packages:
+  Nabu Casa.Home Assistant Voice PE: github://esphome/voice-kit/home-assistant-voice.yaml
+esphome:
+  name: ${name}
+  name_add_mac_suffix: false
+  friendly_name: ${friendly_name}
+api:
+  encryption:
+    key: Ltq7Ggsj8f3o/FEP9napk/SK77ANLWNf5zeiUy9ORCY=
+
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
